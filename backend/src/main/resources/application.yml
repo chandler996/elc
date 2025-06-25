@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: "jdbc:sqlserver://192.168.181.31:14330;databaseName=Backend;schema=Backend;trustServerCertificate=true;"
+    username: sa
+    password: "{,Mv#/M*+{4]Y8AMXZ2@"
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServerDialect
